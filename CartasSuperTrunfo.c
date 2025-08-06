@@ -7,7 +7,7 @@
 //Teste larissa
 
 int main() {
-   //Carta1
+    //Carta1
    char estado[2] = "B";
    char codigoDoEstado[5] = "BAHI";
    char nomeDaCidade[20] = "Salvador";
@@ -15,6 +15,8 @@ int main() {
    float area = 170.500;
    float prod = 4705.5;
    int pontosTuristicos = 80;
+   float densidade = populacao / area;
+   float perCapita = prod / populacao;
 
    //Carta2
    char estado2[2] = "S";
@@ -24,7 +26,8 @@ int main() {
    float area2 = 70.500;
    float prod2 = 705.5;
    int pontosTuristicos2 = 15;
-
+   float densidade2 = populacao2 / area2;
+   float perCapita2 = prod2 / populacao2;
 
     //Visualizar no terminal
     //Carta1
@@ -36,6 +39,8 @@ int main() {
     printf("Área: %.2f km²\n", area);
     printf("PIB: %.2f\n", prod);
     printf("Número de pontos turísticos: %d\n", pontosTuristicos);
+    printf("Densidade populacional: %.2f hab/km²\n", densidade);
+    printf("PIB per Capita: %.2f reais\n", perCapita);
     
     printf("\n");
     
@@ -48,7 +53,10 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f\n", prod2);
     printf("Número de pontos turísticos: %d\n", pontosTuristicos2);
-
+    printf("Densidade populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: %.2f reais\n", perCapita2);
+    
+    
     return 0;
 }
 // Sugestão: Defina variáveis separadas para cada atributo da cidade.
